@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máscara</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+   
+    <h1><b>Trabalho máscara formulário</b></h1>
+    <form>
+       
+         <label>Nome:</label>
+        <input type="text" id="nome" required>
+
+         <label>Endereço:</label>
+        <input type="text" id="endereco" required>
+
+        <label>CEP:</label>
+        <input type="text" id="cep" oninput="mascara_cep()" maxlength="10" required>
+        
+        <label>CPF:</label>
+        <input type="text" id="cpf" oninput="mascara_cpf()" maxlength="14" required>
+        
+        <label>TELEFONE:</label>
+        <input type="text" id="telefone" oninput="mascara_tel()" maxlength="14" required>
+        
+        <label>CNPJ:</label>
+        <input type="text" id="cnpj" oninput="mascara_cnpj()" maxlength="18" required>
+        
+        <label>CODIGO:</label>
+        <input type="text" id="code" oninput="mascara_code()" maxlength="20" required>
+
+        <button class="BTN" type="submit">Enviar</button>
+    </form>
+</body>
+</html>
