@@ -196,9 +196,24 @@ telefone.addEventListener("input", () => {
     let TELEFONE = document.getElementById("telefone").value
     TELEFONE = TELEFONE.slice(0, 15)
     document.getElementById("telefone").value = TELEFONE
-    if (TELEFONE[10] != "-") {
-        if (TELEFONE[10] != undefined) {
-            document.getElementById("telefone").value = TELEFONE.slice(0,10) + "-" + TELEFONE[10];
+    if (TELEFONE[5] != "9") {
+        if (TELEFONE[5] != undefined) {
+            document.getElementById("telefone").value = TELEFONE.slice(0,5) + "9" + TELEFONE[5];
+        }
+    }
+
+})
+
+
+    
+
+telefone.addEventListener("input", () => {
+    let TELEFONE = document.getElementById("telefone").value
+    TELEFONE = TELEFONE.slice(0, 15)
+    document.getElementById("telefone").value = TELEFONE
+    if (TELEFONE[9] != "-") {
+        if (TELEFONE[9] != undefined) {
+            document.getElementById("telefone").value = TELEFONE.slice(0,9) + "-" + TELEFONE[10];
         }
     }
 
@@ -308,4 +323,5 @@ document.addEventListener("DOMContentLoaded", () => {
         event.preventDefault(); 
         alert("Seu formulário foi enviado");
     });
+
 });
