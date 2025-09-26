@@ -158,7 +158,7 @@ let telefone = document.getElementById("telefone")
 
 telefone.addEventListener("input", () => {
     let TELEFONE = document.getElementById("telefone").value
-    TELEFONE = TELEFONE.slice(0, 15)
+    TELEFONE = TELEFONE.slice(0, 16)
     document.getElementById("telefone").value = TELEFONE
     if (TELEFONE[0] != "(") {
         if (TELEFONE[0] != undefined) {
@@ -170,7 +170,7 @@ telefone.addEventListener("input", () => {
 
 telefone.addEventListener("input", () => {
     let TELEFONE = document.getElementById("telefone").value
-    TELEFONE = TELEFONE.slice(0, 15)
+    TELEFONE = TELEFONE.slice(0, 16)
     document.getElementById("telefone").value = TELEFONE
     if (TELEFONE[3] != ")") {
         if (TELEFONE[3] != undefined) {
@@ -182,7 +182,7 @@ telefone.addEventListener("input", () => {
 
 telefone.addEventListener("input", () => {
     let TELEFONE = document.getElementById("telefone").value
-    TELEFONE = TELEFONE.slice(0, 15)
+    TELEFONE = TELEFONE.slice(0, 16)
     document.getElementById("telefone").value = TELEFONE
     if (TELEFONE[4] != " ") {
         if (TELEFONE[4] != undefined) {
@@ -194,7 +194,7 @@ telefone.addEventListener("input", () => {
 
 telefone.addEventListener("input", () => {
     let TELEFONE = document.getElementById("telefone").value
-    TELEFONE = TELEFONE.slice(0, 15)
+    TELEFONE = TELEFONE.slice(0, 16)
     document.getElementById("telefone").value = TELEFONE
     if (TELEFONE[5] != "9") {
         if (TELEFONE[5] != undefined) {
@@ -209,11 +209,11 @@ telefone.addEventListener("input", () => {
 
 telefone.addEventListener("input", () => {
     let TELEFONE = document.getElementById("telefone").value
-    TELEFONE = TELEFONE.slice(0, 15)
+    TELEFONE = TELEFONE.slice(0, 16)
     document.getElementById("telefone").value = TELEFONE
     if (TELEFONE[9] != "-") {
         if (TELEFONE[9] != undefined) {
-            document.getElementById("telefone").value = TELEFONE.slice(0,9) + "-" + TELEFONE[10];
+            document.getElementById("telefone").value = TELEFONE.slice(0,9) + "-" + TELEFONE[9];
         }
     }
 
@@ -325,3 +325,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
